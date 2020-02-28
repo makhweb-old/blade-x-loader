@@ -5,17 +5,17 @@
 [![Total Downloads](https://img.shields.io/packagist/dt/makhweb/blade-x-loader.svg?style=flat-square)](https://packagist.org/packages/makhweb/blade-x-loader)
 
 ## Install
-`composer require makhweb/blade-x-loader`
+`composer require makhweb/blade-x-loader --dev`
 
 ## Usage
-Write a few lines about the usage of this package.
+It's not usable package, yet.
 
 ## Testing
-Run the tests with:
+We have no test. It's just the example test in the folder.
 
-``` bash
+<!-- ``` bash
 vendor/bin/phpunit
-```
+``` -->
 
 ## Contributing
 Please see [CONTRIBUTING](CONTRIBUTING.md) for details.
