@@ -37,7 +37,7 @@ class BladeXLoaderServiceProvider extends ServiceProvider
                 __DIR__ . '/../config/BladeXLoader.php' => config_path('BladeXLoader.php'),
             ], 'config');
             $this->publishes([
-                __DIR__.'/publishable' => public_path('vendor/makhweb/blade-x-loader'),
+                __DIR__.'/../publishable' => public_path('vendor/makhweb/blade-x-loader'),
             ], 'publishable');
         }
     }
