@@ -34,7 +34,7 @@ class BladeXLoaderServiceProvider extends ServiceProvider
     public function publishThings(){
         if ($this->app->runningInConsole()) {
             $this->publishes([
-                __DIR__ . '/../config/BladeXLoader.php' => config_path('BladeXLoader.php'),
+                __DIR__ . '/../config/BladeXLoader.php' => config_path('blade-x-loader.php'),
             ], 'config');
             $this->publishes([
                 __DIR__.'/../publishable' => public_path('vendor/makhweb/blade-x-loader'),
