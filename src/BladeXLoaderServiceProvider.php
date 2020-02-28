@@ -22,42 +22,13 @@ class BladeXLoaderServiceProvider extends ServiceProvider
     }
 
     /**
-     * Register the package routes.
-     *
-     * @return void
-     */
-    private function registerRoutes()
-    {
-        Route::group($this->routeConfiguration(), function () {
-            $this->loadRoutesFrom(__DIR__ . '/Http/routes.php');
-        });
-    }
-
-    /**
-    * Get the Blogg route group configuration array.
-    *
-    * @return array
-    */
-    private function routeConfiguration()
-    {
-        return [
-            'namespace'  => "Makhweb\BladeXLoader\Http\Controllers",
-            'middleware' => 'api',
-            'prefix'     => 'api'
-        ];
-    }
-
-    /**
      * Register any application services.
      *
      * @return void
      */
     public function register()
     {
-        // Register facade
-        $this->app->singleton('BladeXLoader', function () {
-            return new BladeXLoader;
-        });
+        //
     }
 
     public function publishThings(){
