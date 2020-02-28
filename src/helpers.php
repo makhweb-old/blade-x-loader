@@ -15,7 +15,7 @@
  */
 
 if( !function_exists('fromLayout') ){
-    function fromLayout($default, $ajax = "ajax"){
+    function fromLayout($default){
         return 
             request()->ajax() 
             ? "blade-x-loader::layout" 
