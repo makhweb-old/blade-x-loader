@@ -1,6 +1,6 @@
 {
     "name": "makhweb/blade-x-loader",
-    "description": "Your Package Description here",
+    "description": "Load only necessary part of page with X-Request 🚀",
     "type": "library",
     "license": "MIT",
     "authors": [
