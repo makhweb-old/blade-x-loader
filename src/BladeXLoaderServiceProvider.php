@@ -20,7 +20,7 @@ class BladeXLoaderServiceProvider extends ServiceProvider
         $this->mergeConfigFrom(__DIR__ . '/../config/BladeXLoader.php', 'blade-x-loader');
         $this->publishThings();
         $this->loadViewsFrom(__DIR__.'/../resources/views', 'blade-x-loader');
-        $this->addDirections()
+        $this->addDirections();
         // $this->loadMigrationsFrom(__DIR__.'/../database/migrations');
         // $this->registerRoutes();
     }
@@ -73,6 +73,6 @@ class BladeXLoaderServiceProvider extends ServiceProvider
                 $direction->name,
                 $direction->callback
             )
-        })
+        });
     }
 }
