@@ -5,8 +5,7 @@ namespace Makhweb\BladeXLoader;
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Blade;
-use Illuminate\Http\Request;
-use Illuminate\Support\Collection;
+use Illuminate\Support\Facades\Request;
 
 class BladeXLoaderServiceProvider extends ServiceProvider
 {
@@ -49,17 +48,24 @@ class BladeXLoaderServiceProvider extends ServiceProvider
     /**
      * Get additions of Laravel Blade
      */
-    private function bladeAdittions() : Collection
+    private function bladeDirections() : array
     {
-        return new Collection([
+        return [
             [
                 'name' => 'ajax',
                 'type' => 'if',
                 'callback' => function () {
-                    return Request::isAjax();
+                    return Request::ajax();
+                }
+            ],
+            [
+                'name' => 'notAjax',
+                'type' => 'if',
+                'callback' => function () {
+                    return !Request::ajax();
                 }
             ]
-        ]);
+        ];
     }
 
     /**
@@ -67,12 +73,12 @@ class BladeXLoaderServiceProvider extends ServiceProvider
      */
     private function addDirections()
     {
-        $this->bladeAdittions()->each(function($direction){
+        foreach($this->bladeDirections() as $direction){
             call_user_func(
-                [Blade::class, $direction->get('type')],
-                $direction->get('name'),
-                $direction->get('callback')
+                [Blade::class, $direction['type']],
+                $direction['name'],
+                $direction['callback']
             );
-        });
+        };
     }
 }
