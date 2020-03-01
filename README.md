@@ -1,4 +1,4 @@
-# blade-x-loader
+# Load only necessary part of page with ajax request 🚀
 
 [![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE.md)
 [![Travis](https://img.shields.io/travis/makhweb/blade-x-loader.svg?style=flat-square)]()
