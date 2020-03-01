@@ -45,10 +45,7 @@
         "laravel": {
             "providers": [
                 "Makhweb\\BladeXLoader\\BladeXLoaderServiceProvider"
-            ],
-            "aliases": {
-                "Makhweb": "Makhweb\\BladeXLoader\\BladeXLoaderFacade"
-            }
+            ]
         }
     }
 }
