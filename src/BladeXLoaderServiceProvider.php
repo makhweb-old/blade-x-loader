@@ -69,9 +69,9 @@ class BladeXLoaderServiceProvider extends ServiceProvider
     {
         $this->bladeAdittions()->each(function($direction){
             call_user_func(
-                [Blade::class, $direction->type],
-                $direction->name,
-                $direction->callback
+                [Blade::class, $direction->get('type')],
+                $direction->get('name'),
+                $direction->get('callback')
             );
         });
     }
