@@ -35,7 +35,7 @@ Example (layout.blade.php):
 You must create an element with identified **id** attribute where the package can put html from the request:
 ```bash
 <div id="app">
-	// HTML
+ // HTML
 </div>
 ```
 
