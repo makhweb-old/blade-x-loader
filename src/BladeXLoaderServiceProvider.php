@@ -72,7 +72,7 @@ class BladeXLoaderServiceProvider extends ServiceProvider
                 [Blade::class, $direction->type],
                 $direction->name,
                 $direction->callback
-            )
+            );
         });
     }
 }
