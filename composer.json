@@ -1,6 +1,13 @@
 {
     "name": "makhweb/blade-x-loader",
     "description": "Load only necessary part of page with X-Request 🚀",
+    "keywords": [
+        "makhweb",
+        "laravel",
+        "blade",
+        "javascript",
+        "ajax",
+    ],
     "type": "library",
     "license": "MIT",
     "authors": [
