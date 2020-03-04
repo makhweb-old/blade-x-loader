@@ -60,7 +60,7 @@ Shows when request is ajax
 @endajax
 ```
 When you need to check that the request is not ajax,
-you can use the @notAjax blade directive.
+you can use the <b>@notAjax</b> blade directive.
 
 ## Testing
 In next releases, we will write tests 👀
