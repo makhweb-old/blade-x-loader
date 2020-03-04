@@ -59,7 +59,7 @@ Shows when request is ajax
  <p>This is an ajax request<p>
 @endajax
 ```
-When you need to check that the request is not ajax,
+When you need to check that the request <b>is not ajax,<b/>
 you can use the <b>@notAjax</b> blade directive.
 
 ## Testing
