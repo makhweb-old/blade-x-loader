@@ -49,9 +49,9 @@ Optionally the config file can be published with:
 php artisan vendor:publish --provider="Makhweb\BladeXLoader\BladeXLoaderServiceProvider" --tag="config"
 ```
 
-### Blade directives
+## Blade directives
 
-#### @ajax
+### @ajax
 Shows when request is ajax
 
 ```bash
