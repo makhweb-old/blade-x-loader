@@ -1,6 +1,6 @@
 {
     "name": "makhweb/blade-x-loader",
-    "description": "Load only necessary part of page with X-Request 🚀",
+    "description": "Load only necessary part of page with ajax request 🚀 (Laravel, Blade)",
     "keywords": [
         "makhweb",
         "laravel",
