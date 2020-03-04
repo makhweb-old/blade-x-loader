@@ -4,6 +4,9 @@
 [![Latest Stable Version](https://poser.pugx.org/makhweb/blade-x-loader/v/stable)](https://packagist.org/packages/makhweb/blade-x-loader)
 [![Total Downloads](https://img.shields.io/packagist/dt/makhweb/blade-x-loader.svg?style=flat-square)](https://packagist.org/packages/makhweb/blade-x-loader)
 
+## Demo
+https://blade-x-loader.herokuapp.com
+
 ## Installation
 
 You can install the package via Composer:
