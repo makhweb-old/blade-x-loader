@@ -6,7 +6,8 @@
 
 ## Demo
 
-https://blade-x-loader.herokuapp.com
+Website: https://blade-x-loader.herokuapp.com
+Source: https://github.com/makhweb/blade-x-loader-demo
 
 ## Installation
 
