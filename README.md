@@ -59,6 +59,14 @@ Optionally the config file can be published with:
 php artisan vendor:publish --provider="Makhweb\BladeXLoader\BladeXLoaderServiceProvider" --tag="config"
 ```
 
+## Caching
+
+You just need to add the `cacheable` attribute to `a` tag:
+```
+<a href="{{ route('home) }}" ajaxable cacheable>Home</a>
+```
+All data will be stored in **localStorage**.
+
 ## Blade directives
 
 ### @ajax
