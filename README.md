@@ -61,7 +61,7 @@ php artisan vendor:publish --provider="Makhweb\BladeXLoader\BladeXLoaderServiceP
 
 ## Caching
 
-You just need to add the `cacheable` attribute to `a` tag:
+You just need to add the `cacheable` attribute to the tag:
 ```
 <a href="{{ route('home) }}" ajaxable cacheable>Home</a>
 ```
