@@ -18,6 +18,14 @@ return [
     | It uses to find `a` tags that use ajax request
     |
     */
-    'tag_attribute' => 'ajaxable'
+    'tag_attribute' => 'ajaxable',
+
+    /*
+    |--------------------------------------------------------------------------
+    | Cache tag attribute
+    |--------------------------------------------------------------------------
+    |
+    */
+    'cache_attribute' => 'cacheable'
 
 ];
