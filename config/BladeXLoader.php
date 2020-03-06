@@ -26,6 +26,18 @@ return [
     |--------------------------------------------------------------------------
     |
     */
-    'cache_attribute' => 'cacheable'
+    'cache_attribute' => 'cacheable',
 
+    /*
+    |--------------------------------------------------------------------------
+    | Configuration of NProgress.js
+    |--------------------------------------------------------------------------
+    | 
+    | See for details: https://github.com/rstacruz/nprogress/#configuration
+    |
+    */
+    'nprogress_config' => [
+        'showSpinner' => false
+    ]
+    
 ];
