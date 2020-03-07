@@ -1,6 +1,6 @@
 {
   "name": "makhweb/blade-x-loader",
-  "description": "Load only necessary part of page with ajax request 🚀 (Laravel, Blade)",
+  "description": "Speed up your application with SPA-like dynamic page loading over AJAX 🚀 (Laravel, Blade)",
   "keywords": [
     "makhweb",
     "laravel",
