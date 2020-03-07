@@ -62,9 +62,11 @@ php artisan vendor:publish --provider="Makhweb\BladeXLoader\BladeXLoaderServiceP
 ## Caching
 
 You just need to add the `cacheable` attribute to the tag:
+
 ```
 <a href="{{ route('home) }}" ajaxable cacheable>Home</a>
 ```
+
 All data will be stored in **localStorage**.
 
 ## Blade directives
