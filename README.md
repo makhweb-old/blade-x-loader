@@ -61,7 +61,7 @@ php artisan vendor:publish --provider="Makhweb\BladeXLoader\BladeXLoaderServiceP
 
 ## Caching
 
-You just need to add the `cache-for="[[seconds]]"` attribute to the tag:
+You just need to add the `cache-for="[seconds]"` attribute to the tag:
 
 ```
 <a href="{{ route('home) }}" ajaxable cache-for="60">Home</a>
