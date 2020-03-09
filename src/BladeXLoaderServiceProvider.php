@@ -20,8 +20,6 @@ class BladeXLoaderServiceProvider extends ServiceProvider
         $this->publishThings();
         $this->loadViewsFrom(__DIR__.'/../resources/views', 'blade-x-loader');
         $this->addDirections();
-        // $this->loadMigrationsFrom(__DIR__.'/../database/migrations');
-        // $this->registerRoutes();
     }
 
     /**
