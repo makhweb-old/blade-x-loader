@@ -51,7 +51,7 @@
   "extra": {
     "laravel": {
       "providers": [
-        "Makhweb\\BladeXLoader\\BladeXLoaderServiceProvider"
+        "Makhweb\\BladeXLoader\\Providers\\BladeXLoaderServiceProvider"
       ]
     }
   }

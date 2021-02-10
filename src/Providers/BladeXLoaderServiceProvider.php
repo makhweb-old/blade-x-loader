@@ -1,9 +1,8 @@
 <?php
 
-namespace Makhweb\BladeXLoader;
+namespace Makhweb\BladeXLoade\Providers;
 
 use Illuminate\Support\ServiceProvider;
-use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Blade;
 use Illuminate\Support\Facades\Request;
 
@@ -18,18 +17,8 @@ class BladeXLoaderServiceProvider extends ServiceProvider
     {
         $this->mergeConfigFrom(__DIR__ . '/../config/BladeXLoader.php', 'blade-x-loader');
         $this->publishThings();
-        $this->loadViewsFrom(__DIR__.'/../resources/views', 'blade-x-loader');
+        $this->loadViewsFrom(__DIR__ . '/../resources/views', 'blade-x-loader');
         $this->addDirections();
-    }
-
-    /**
-     * Register any application services.
-     *
-     * @return void
-     */
-    public function register()
-    {
-        //
     }
 
     public function publishThings()
@@ -39,7 +28,7 @@ class BladeXLoaderServiceProvider extends ServiceProvider
                 __DIR__ . '/../config/BladeXLoader.php' => config_path('blade-x-loader.php'),
             ], 'config');
             $this->publishes([
-                __DIR__.'/../publishable' => public_path('vendor/makhweb/blade-x-loader'),
+                __DIR__ . '/../publishable' => public_path('vendor/makhweb/blade-x-loader'),
             ], 'publishable');
         }
     }
@@ -47,21 +36,21 @@ class BladeXLoaderServiceProvider extends ServiceProvider
     /**
      * Get additions of Laravel Blade
      */
-    private function bladeDirections() : array
+    private function bladeDirections(): array
     {
         return [
             [
-                'name' => 'ajax',
+                'name' => 'pjax',
                 'type' => 'if',
                 'callback' => function () {
-                    return Request::ajax();
+                    return Request::pjax();
                 }
             ],
             [
-                'name' => 'notAjax',
+                'name' => 'notPjax',
                 'type' => 'if',
                 'callback' => function () {
-                    return !Request::ajax();
+                    return !Request::pjax();
                 }
             ]
         ];
@@ -72,7 +61,7 @@ class BladeXLoaderServiceProvider extends ServiceProvider
      */
     private function addDirections()
     {
-        foreach($this->bladeDirections() as $direction){
+        foreach ($this->bladeDirections() as $direction) {
             call_user_func(
                 [Blade::class, $direction['type']],
                 $direction['name'],
