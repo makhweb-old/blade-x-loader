@@ -4,9 +4,7 @@
     "version": "0.0.2",
     "scripts": {
         "watch": "rollup -c -w",
-        "build": "concurrently \"rollup -c\"",
-        "test": "npx jest",
-        "test:debug": "node --inspect node_modules/.bin/jest --runInBand"
+        "build": "concurrently \"rollup -c\""
     },
     "author": "Makhweb",
     "license": "MIT",
