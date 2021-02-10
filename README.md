@@ -6,8 +6,6 @@
 
 ## Demo
 
-Website: https://blade-x-loader.herokuapp.com
-
 Source: https://github.com/makhweb/blade-x-loader-demo
 
 ## Installation
@@ -26,7 +24,7 @@ php artisan vendor:publish --provider="Makhweb\BladeXLoader\BladeXLoaderServiceP
 
 ## Usage
 
-You should use **fromLayout([layout])** function when your blade component is extending from other layout.
+You should use **pjaxLayout([layout])** function when your blade component is extending from other layout.
 
 ```bash
 @extends(fromLayout('main'))
@@ -71,14 +69,14 @@ All data will be stored in **localStorage**.
 
 ## Blade directives
 
-### @ajax
+### @pjax
 
-Shows when request is ajax
+Shows when request is pjax
 
 ```bash
-@ajax
- <p>This is an ajax request<p>
-@endajax
+@pjax
+ <p>This is a pjax request<p>
+@endpjax
 ```
 
 When you need to check that the request <b>is not ajax,</b>
