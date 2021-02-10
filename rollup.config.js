@@ -5,14 +5,15 @@ import replace from '@rollup/plugin-replace';
 import commonjs from 'rollup-plugin-commonjs';
 import { terser } from "rollup-plugin-terser";
 
+import path from 'path';
+
 import pkg from './package.json';
 
 export default {
-    input: 'src/index.js',
+    input: 'resources/js/index.js',
     output: {
         name: 'BladeXLoader',
-        file: "C:\\Laragon\\www\\blade-x-loader-v2-demo\\public\\vendor\\makhweb\\blade-x-loader\\js\\app.js",
-        // file: 'dist/blade-x-engine.js',
+        file: path.resolve('publishable', 'js', 'app.js'),
         format: 'iife',
     },
     plugins: [
@@ -23,7 +24,7 @@ export default {
         resolve(),
         filesize(),
         babel({
-            exclude: 'node_modules/**', 
+            exclude: 'node_modules/**',
             plugins: ["@babel/plugin-proposal-class-properties", "@babel/plugin-transform-classes"]
         }),
         commonjs({
