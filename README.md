@@ -1,4 +1,4 @@
-(WIP) # Speed up your application with SPA-like dynamic page loading over AJAX 🚀 (Laravel, Blade)
+# (WIP) Speed up your application with SPA-like dynamic page loading over AJAX 🚀 (Laravel, Blade)
 
 [![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE.md)
 [![Latest Stable Version](https://poser.pugx.org/makhweb/blade-x-loader/v/stable)](https://packagist.org/packages/makhweb/blade-x-loader)
